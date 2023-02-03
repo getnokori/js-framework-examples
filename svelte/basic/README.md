@@ -1,6 +1,6 @@
 # Getting Started
 
-For these demos to work on your local machine as shown in the example, you must first complete the Preqrequisites described in the root of this repository.
+For these demos to work on your local machine as shown in the example, you must first complete the preqrequisites described below.
 
 ```bash
 # Install Dependencies
