@@ -35,9 +35,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <header>
-    <div id="wrapper">
-      <h1 class="text-4xl font-bold">Vue3 lolaDB Example</h1>
+  <div id="wrapper">
+    <h1 class="text-4xl font-bold">Nuxt V3 lolaDB Example</h1>
       <p class="pt-4">
         In this fictitious example, we are fetching customer orders from our
         database of soda orders at our soda shop.
@@ -62,28 +61,5 @@ onMounted(async () => {
         </tr>
       </table>
     </div>
-  </header>
+
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-#wrapper {
-  padding: 20px;
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 40%;
-}
-
-table td,
-table th {
-  border: 1px solid #dddddd;
-  text-align: right;
-  padding: 8px;
-}
-</style>
