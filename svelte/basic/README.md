@@ -1,6 +1,10 @@
-# Getting Started
+# Svelte lolaDB Basic Example
 
-For these demos to work on your local machine as shown in the example, you must first complete the preqrequisites described below.
+A basic example showing how to use [lolaDB](https://loladb.com?utm_source=github&utm_medium=js-framework-examples&utm_campaign=svelte) with Svelte.
+
+## lolaDB Docs
+
+You can always reference the [lolaDB Developer Docs](https://docs.loladb.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=svelte) for more information.
 
 ```bash
 # Install Dependencies

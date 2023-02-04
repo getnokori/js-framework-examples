@@ -1,5 +1,11 @@
 # Next.js lolaDB Examples
 
+A basic example for using [lolaDB](https://loladb.com?utm_source=github&utm_medium=js-framework-examples&utm_campaign=nextjs) with Next.js.
+
+## lolaDB Docs
+
+You can always reference the [lolaDB Developer Docs](https://docs.loladb.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=nextjs) for more information.
+
 ## Getting Started
 
 First, run the development server:
@@ -16,11 +22,34 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## Learn More
+## Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+### Test Data Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For this example to work on your local machine as shown in the examples, you must setup a database with an 'orders' table. The table should have the following columns:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- orderId
+- productName
+- quantity
+- customerId
+
+Insert some dummy data. You can use the following SQL statement:
+
+```sql
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589491, 'NuGrape', 12, 384164);
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589488, 'Cheerwine', 6, 897788);
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589490, 'RC Cola', 5, 794576);
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589489, 'Sunkist', 3, 637786);
+```
+
+### Create your query
+
+Within the lolaDB UI, create a `Source` within your `Hub` that connects to your database. Create a `Query` that selects the data you want to display in your frontend application. You can use the following SQL statement:
+
+```sql
+
+SELECT * FROM orders;
+
+```
+
+Save your query and copy the `Query ID` from the top right hand corner to use in your demo app.
