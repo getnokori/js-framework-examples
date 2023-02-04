@@ -26,7 +26,7 @@ export default async function handler(
   res: NextApiResponse<Orders>
 ) {
   const {data: orders, error} = await lola.query.execute({
-    queryId: 'lola.q.MKCy3BBzVl2Slj1h0Td'
+    queryId: '{{YOUR_QUERY_ID}}'
   })
 
   res.status(200).json({ orders, error})
