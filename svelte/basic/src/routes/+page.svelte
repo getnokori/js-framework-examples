@@ -22,7 +22,7 @@
 		return orders;
 	}
 </script>
-
+<div id="wrapper">
 <h1>Svelte lolaDB Example</h1>
 <p>
 	In this fictitious example, we are fetching customer orders from our database of soda orders at
@@ -50,8 +50,14 @@
 		{/each}
 	</table>
 {/await}
+</div>
 
 <style>
+
+	#wrapper{
+		padding-left: 20px;
+	}
+	
 	table {
 		font-family: arial, sans-serif;
 		border-collapse: collapse;
