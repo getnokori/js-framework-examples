@@ -27,7 +27,6 @@ function App() {
     }
     
     if (loadingData) {
-      // if the result is not ready so you make the axios call
       getData();
     }
   });
