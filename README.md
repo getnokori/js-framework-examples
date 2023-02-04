@@ -8,6 +8,7 @@ This repository contains examples for many of today's most popular frontend fram
 
 - [React](./react)
 - [Svelte](./svelte)
+- [Vue](./vue)
 
 ## .env Files
 
