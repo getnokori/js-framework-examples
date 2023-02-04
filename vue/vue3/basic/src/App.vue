@@ -10,13 +10,19 @@ interface Orders {
   customerId: string;
 }
 
-const data = {
-  orders: reactive<Orders[]>([]),
-};
+interface Data {
+  orders: Orders[];
+  isLoading: boolean;
+}
+
+const data: Data = reactive({
+  orders: [],
+  isLoading: true,
+});
 
 onMounted(async () => {
   const { data: orders, error } = await lola.query.execute({
-    queryId: "{{YOUR_QUERY_ID}}",
+    queryId: "lola.q.MKCy3BBzVl2Slj1h0Td",
   });
 
   if (error) {
@@ -24,22 +30,23 @@ onMounted(async () => {
     return;
   }
   data.orders = orders;
+  data.isLoading = false;
 });
 </script>
 
 <template>
   <header>
     <div id="wrapper">
-      <h1>Vue3 lolaDB Example</h1>
-      <p>
+      <h1 class="text-4xl font-bold">Vue3 lolaDB Example</h1>
+      <p class="pt-4">
         In this fictitious example, we are fetching customer orders from our
         database of soda orders at our soda shop.
       </p>
-      <h2>Orders list</h2>
+      <h2 class="text-xl pt-4">Orders list</h2>
 
-      <p v-if="data.orders.length < 1">loading...</p>
+      <p v-if="data.isLoading">loading...</p>
 
-      <table>
+      <table class="table-auto" v-if="!data.isLoading">
         <tr>
           <th>Order ID</th>
           <th>Product Name</th>
@@ -56,15 +63,15 @@ onMounted(async () => {
       </table>
     </div>
   </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
+}
+
+#wrapper {
+  padding: 20px;
 }
 
 table {
