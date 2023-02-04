@@ -8,3 +8,21 @@ This repository contains examples for many of today's most popular frontend fram
 
 - [React](./react)
 - [Svelte](./svelte)
+
+## .env Files
+
+Annoyingly, different frameworks utilize .env files in their own way, often with non-obvious documentation.
+
+For these examples, you must set your lola API key in the .env file in this manner:
+
+### React
+
+```bash
+REACT_APP_LOLA_API_KEY={{YOUR_API_KEY}}
+```
+
+### Svelte
+
+```bash
+VITE_LOLA_API_KEY={{YOUR_API_KEY}}
+```
