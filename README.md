@@ -6,6 +6,7 @@ This repository contains examples for many of today's most popular frontend fram
 
 ## Available Examples
 
+- [Next.js](./nextjs)
 - [React](./react)
 - [Svelte](./svelte)
 - [Vue](./vue)
