@@ -36,10 +36,11 @@ For this example to work on your local machine as shown in the examples, you mus
 Insert some dummy data. You can use the following SQL statement:
 
 ```sql
-INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589491, 'NuGrape', 12, 384164);
-INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589488, 'Cheerwine', 6, 897788);
-INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589490, 'RC Cola', 5, 794576);
-INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589489, 'Sunkist', 3, 637786);
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589491, 'KosmicKrush', 12, 384164);
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589488, 'MoonMist', 6, 897788);
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589490, 'CosmiGulp', 5, 794576);
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589489, 'Stardrizzle', 3, 637786);
+INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589495, 'AstroFizz', 13, 737786);
 ```
 
 ### Create your query
