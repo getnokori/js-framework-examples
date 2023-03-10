@@ -4,6 +4,8 @@ A basic example that shows how to use [lolaDB](https://loladb.com?utm_source=git
 
 For these demos to work on your local machine as shown in the example, you must first complete the preqrequisites described below.
 
+This example allows you to query any connected datbase, including MySQL, PostgreSQL, MariaDB, and more. See a full list of supported databases here: [https://docs.loladb.com/guides/supported-sources/] (<https://docs.loladb.com/guides/supported-sources/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=react>)
+
 ## lolaDB Docs
 
 You can always reference the [lolaDB Developer Docs](https://docs.loladb.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=react) for more information.
