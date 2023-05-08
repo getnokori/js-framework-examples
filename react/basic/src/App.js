@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import LolaDB from '@loladb/sdk-js';
 import './App.css';
-const lola = new LolaDB(process.env.REACT_APP_LOLA_API_KEY);
+import nokori from "@nokori/js-sdk";
+const nk = new nokori(import.meta.env.VITE_NOKORI_API_KEY);
 
 function App() {
   const [loadingData, setLoadingData] = useState(true);
@@ -12,7 +12,7 @@ function App() {
       const {
         data: results, 
         error
-      } = await lola.query.execute({
+      } = await nk.query.execute({
           queryId: '{{YOUR_QUERY_ID}}'
         })
 
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React lolaDB Example</h1>
+      <h1>React nokori Example</h1>
       <p>
         In this fictitious example, we are fetching customer orders from our database of soda orders at
         our soda shop.

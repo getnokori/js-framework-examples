@@ -1,12 +1,12 @@
-# Next.js lolaDB Examples
+# Next.js nokori Examples
 
-A basic example for using [lolaDB](https://loladb.com?utm_source=github&utm_medium=js-framework-examples&utm_campaign=nextjs) with Next.js.
+A basic example for using [nokori](https://nokori.com?utm_source=github&utm_medium=js-framework-examples&utm_campaign=nextjs) with Next.js.
 
-This example allows you to query any connected datbase, including MySQL, PostgreSQL, MariaDB, and more. See a full list of supported databases here: [lolaDB Supported Sources](https://docs.loladb.com/guides/supported-sources/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=nextjs)
+This example allows you to query any connected datbase, including MySQL, PostgreSQL, MariaDB, and more. See a full list of supported databases here: [nokori Supported Sources](https://docs.nokori.com/guides/supported-sources/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=nextjs)
 
-## lolaDB Docs
+## nokori Docs
 
-You can always reference the [lolaDB Developer Docs](https://docs.loladb.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=nextjs) for more information.
+You can always reference the [nokori Developer Docs](https://docs.nokori.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=nextjs) for more information.
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589489, 'Sunki
 
 ### Create your query
 
-Within the lolaDB UI, create a `Source` within your `Hub` that connects to your database. Create a `Query` that selects the data you want to display in your frontend application. You can use the following SQL statement:
+Within the nokori UI, create a `Source` within your `Hub` that connects to your database. Create a `Query` that selects the data you want to display in your frontend application. You can use the following SQL statement:
 
 ```sql
 

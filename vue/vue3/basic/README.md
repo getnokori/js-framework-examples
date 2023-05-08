@@ -1,12 +1,12 @@
-# lolaDB Vue 3 Basic Example
+# nokori Vue 3 Basic Example
 
-A basic examples for using [lolaDB](https://loladb.com?utm_source=github&utm_medium=js-framework-examples&utm_campaign=vue) with Vue.
+A basic examples for using [nokori](https://nokori.com?utm_source=github&utm_medium=js-framework-examples&utm_campaign=vue) with Vue.
 
-This example allows you to query any connected datbase, including MySQL, PostgreSQL, MariaDB, and more. See a full list of supported databases here: [lolaDB Supported Sources](https://docs.loladb.com/guides/supported-sources/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=vue)
+This example allows you to query any connected datbase, including MySQL, PostgreSQL, MariaDB, and more. See a full list of supported databases here: [nokori Supported Sources](https://docs.nokori.com/guides/supported-sources/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=vue)
 
-## lolaDB Docs
+## nokori Docs
 
-You can always reference the [lolaDB Developer Docs](https://docs.loladb.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=vue) for more information.
+You can always reference the [nokori Developer Docs](https://docs.nokori.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=vue) for more information.
 
 ## Project Setup
 
@@ -42,7 +42,7 @@ INSERT INTO (orderId, productName, quantity, customerId) VALUES (3589489, 'Sunki
 
 ### Create your query
 
-Within the lolaDB UI, create a `Source` within your `Hub` that connects to your database. Create a `Query` that selects the data you want to display in your frontend application. You can use the following SQL statement:
+Within the nokori UI, create a `Source` within your `Hub` that connects to your database. Create a `Query` that selects the data you want to display in your frontend application. You can use the following SQL statement:
 
 ```sql
 

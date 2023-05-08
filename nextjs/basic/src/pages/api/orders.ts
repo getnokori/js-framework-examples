@@ -1,12 +1,12 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import LolaDB from '@loladb/sdk-js'
-const apiKey = process.env.LOLA_API_KEY
+import nokori from '@nokori/js-sdk'
+const apiKey = process.env.NOKORI_API_KEY
 if (!apiKey) {
-  throw new Error("lolaDB API Key not found");
+  throw new Error("nokori API Key not found");
   
 }
-const lola = new LolaDB(apiKey);
+const nk = new nokori(apiKey);
 
 type OrderItem = {
   orderId: string,
@@ -25,7 +25,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Orders>
 ) {
-  const {data: orders, error} = await lola.query.execute({
+  const {data: orders, error} = await nk.query.execute({
     queryId: '{{YOUR_QUERY_ID}}'
   })
 

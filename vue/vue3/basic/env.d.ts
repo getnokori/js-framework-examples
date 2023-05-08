@@ -1,2 +1,2 @@
 /// <reference types="vite/client" />
-/// <reference types="@loladb/sdk-js" />
+/// <reference types="@nokori/js-sdk" />

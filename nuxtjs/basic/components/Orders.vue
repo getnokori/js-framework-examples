@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, reactive } from "vue";
-import LolaDB from "@loladb/sdk-js";
-const lola = new LolaDB(import.meta.env.VITE_LOLA_API_KEY);
+import nokori from "@nokori/js-sdk";
+const nk = new nokori(import.meta.env.VITE_NOKORI_API_KEY);
 
 interface Orders {
   orderId: string;
@@ -21,7 +21,7 @@ const data: Data = reactive({
 });
 
 onMounted(async () => {
-  const { data: orders, error } = await lola.query.execute({
+  const { data: orders, error } = await nk.query.execute({
     queryId: "{{YOUR_QUERY_ID}}",
   });
 
@@ -36,7 +36,7 @@ onMounted(async () => {
 
 <template>
   <div id="wrapper">
-    <h1 class="text-4xl font-bold">Nuxt V3 lolaDB Example</h1>
+    <h1 class="text-4xl font-bold">Nuxt V3 nokori Example</h1>
       <p class="pt-4">
         In this fictitious example, we are fetching customer orders from our
         database of soda orders at our soda shop.

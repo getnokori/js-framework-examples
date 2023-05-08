@@ -1,14 +1,46 @@
-# lolaDB JS Framework Examples
+# nokori JS Framework Examples
 
-Example projects that use [lolaDB](https://loladb.com?utm_source=github&utm_medium=js-framework-examples&utm_campaign=home) with various frontend frameworks.
+Example projects that use [nokori](https://nokori.com?utm_source=github&utm_medium=js-framework-examples&utm_campaign=home) with various frontend frameworks.
 
-lolaDB works with nearly every frontend framework. Javascript or Typescript.
+nokori works with every JS/TS frontend framework.
 
 This repository contains examples for many of today's most popular frontend frameworks.
 
-## lolaDB Docs
+## nokori Docs
 
-You can always reference the [lolaDB Developer Docs](https://docs.loladb.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=home) for more information.
+You can always reference the [nokori Developer Docs](https://docs.nokori.com/?utm_source=github&utm_medium=js-framework-examples&utm_campaign=home) for more information.
+
+## Nokori Powered Components
+
+nokori makes it near effortless to add any database or API operation to your components without servers, APIs, or infrastructure to manage.
+
+Because nokori is cloud-native, queries are managed centrally as Special Purpose Cloud Functions in the nokori UI. This uniquely allows you to keep your data operations close to your template logic without sacrificing code maintainability or reusability.
+
+### Component Example
+
+```js
+import nokori from '@nokori/js-sdk'
+const nk = nokori('api_key')
+
+async function create(formData: FormData){
+ const { data, error } = await nk.query.execute({
+    queryId: 'nk.q.-ddqHfqeZNihbChcAbf', //Global Cloud Query ID
+      context: {
+        name: formDate.get('name')
+      } 
+    }
+  )
+}
+
+export default function FormComponent() {
+  return (
+    <form action={create}>
+      <input type="text" name="name" />
+      <button type="submit">Submit</button>
+    </form>
+  )
+}
+```
 
 ## Available Examples
 
@@ -21,28 +53,28 @@ You can always reference the [lolaDB Developer Docs](https://docs.loladb.com/?ut
 
 Annoyingly, different frameworks utilize .env files in their own way, often with non-obvious documentation.
 
-For these examples, you must set your lola API key in the .env file in this manner:
+For these examples, you must set your nokori API key in the .env file in this manner:
 
 ### Next.js
 
 ```bash
-LOLA_API_KEY={{YOUR_API_KEY}}
+NOKORI_API_KEY={{YOUR_API_KEY}}
 ```
 
 ### React
 
 ```bash
-REACT_APP_LOLA_API_KEY={{YOUR_API_KEY}}
+REACT_APP_NOKORI_API_KEY={{YOUR_API_KEY}}
 ```
 
 ### Svelte
 
 ```bash
-VITE_LOLA_API_KEY={{YOUR_API_KEY}}
+VITE_NOKORI_API_KEY={{YOUR_API_KEY}}
 ```
 
 ### Vue
 
 ```bash
-VITE_LOLA_API_KEY={{YOUR_API_KEY}}
+VITE_NOKORI_API_KEY={{YOUR_API_KEY}}
 ```

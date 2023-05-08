@@ -1,1 +1,1 @@
-declare module "@loladb/sdk-js";
+declare module "@nokori/js-sdk";

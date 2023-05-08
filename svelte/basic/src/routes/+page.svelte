@@ -1,6 +1,6 @@
 <script lang="ts">
-	import LolaDB from '@loladb/sdk-js';
-	const lola = new LolaDB(import.meta.env.VITE_LOLA_API_KEY);
+	import nokori from '@nokori/js-sdk';
+	const nk = new nokori(import.meta.env.VITE_NOKORI_API_KEY);
 	import { onMount } from 'svelte';
 
 	let orders: any = [];
@@ -10,7 +10,7 @@
 	});
 
 	async function getOrders() {
-		const { data: orders, error } = await lola.query.execute({
+		const { data: orders, error } = await nk.query.execute({
 			queryId: '{{YOUR_QUERY_ID}}'
 		});
 
@@ -23,7 +23,7 @@
 	}
 </script>
 <div id="wrapper">
-<h1>Svelte lolaDB Example</h1>
+<h1>Svelte nokori Example</h1>
 <p>
 	In this fictitious example, we are fetching customer orders from our database of soda orders at
 	our soda shop.
