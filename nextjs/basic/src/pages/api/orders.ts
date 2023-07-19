@@ -25,6 +25,12 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Orders>
 ) {
+
+  /**
+  *
+  * Nokori Hubs Integration - Function call baked in to the handler.
+  *
+  **/
   const {data: orders, error} = await nk.query.execute({
     queryId: '{{YOUR_QUERY_ID}}'
   })
